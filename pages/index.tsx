@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation'
 export default function Page() {
   const searchParams = useSearchParams()
 
-  const cityCode = '13001'
+  const cityCode = searchParams.get('cityCode') ?? '13001'
 
   return (
     <>
